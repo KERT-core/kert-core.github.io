@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="robots" content="index, follow" />
 	<meta name="googlebot" content="index, follow, noarchive" />
-	<title>KERT - Home</title>
+	<title>KERT - Contact</title>
 	<link rel="icon" href="/favicon.ico" />
 	<meta name="description" content="KERT is Kyungpook National(computer) Emergency Response Team" />
 
@@ -28,18 +28,14 @@ if (!doNotTrack) {
 
 	
 
-	<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="/wall.png"/>
-
-<meta name="twitter:title" content="Home"/>
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Contact"/>
 <meta name="twitter:description" content="KERT is Kyungpook National(computer) Emergency Response Team"/>
 
-	<meta property="og:title" content="Home" />
+	<meta property="og:title" content="Contact" />
 <meta property="og:description" content="KERT is Kyungpook National(computer) Emergency Response Team" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
-
-<meta property="og:image" content="/wall.png" />
+<meta property="og:url" content="/contact/" />
 
 
 
@@ -70,14 +66,14 @@ if (!doNotTrack) {
         
         
         <li class="menu__items__item" aria-label="Contact">
-            <a href="/contact/" class="menu__items__item__link "
+            <a href="/contact/" class="menu__items__item__link active"
                 alt="Contact" role="menuitem">
                 Contact
             </a>
         </li>
         
         <li class="menu__items__item" aria-label="Home">
-            <a href="/" class="menu__items__item__link active"
+            <a href="/" class="menu__items__item__link "
                 alt="Home" role="menuitem">
                 Home
             </a>
@@ -110,28 +106,48 @@ if (!doNotTrack) {
     </div>
 </nav>
 </header>
-<main class="hero" 
-    style="background-image: url('/images/wall.png');" >
-    <div class="hero__caption"  style="color: 000;"
-        >
-        
+<main class="contact">
+    <h1 class="contact__title">Contact</h1>
+    <p class="contact__content"></p>
 
-<h1 id="kert">KERT</h1>
+    
+        <form action="https://formspree.io/ekstrah.dongho@gmail.com" method="post" class="contact__form"
+            id="contactForm">
+            
 
-<h2 id="knu-computer-emergency-response-team">KNU computer Emergency Response Team</h2>
+            
+            <div class="contact__field contact__field--name">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Your name"
+                    class="contact__form__input contact__form__name" id="name"
+                    aria-labelledby="name" required>
+            </div>
 
-        
-        <a href="/contact" class="ripple-btn cta__btn" alt="Contact"
-    aria-label="Contact">
-    Contact
-</a>
-        
-    </div>
+            
+            <div class="contact__field contact__field--email">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Your email"
+                    class="contact__form__input contact__form__email" id="email"
+                    aria-labelledby="email" required>
+            </div>
+
+            
+            <div class="contact__field contact__field--msg">
+                <label for="message">Write something</label>
+                <textarea name="message" id="message" form="contactForm"
+                    maxlength="750" id="message"
+                    arial-labelledby="message" required></textarea>
+            </div>
+
+            
+            <div class="contact__field contact__field--submit">
+                <button type="submit" class="ripple-btn submit" onclick="cleanForm" aria-label="Send">
+                    Send
+                </button>
+            </div>
+
+        </form>
 </main>
-
-
-
-
 <footer class="footer">
     
     
